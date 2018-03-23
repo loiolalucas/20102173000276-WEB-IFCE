@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    
+    <style>
+        *{ margin: 0;padding: 0; }
+        body{ font-family: "trebuchet ms"; }
+        a{ text-decoration: none; color: #000; }
+        a:hover{ }
+ 
+        #all{
+            width: 600px;
+            height: 50px;
+            line-height: 60px; /* centraliza na vertical */
+            background-color: #006400;
+            border: 1px solid #ccc;
+            margin: 0 auto;
+			border-radius: 6px;
+        }
+        ul.menu1{
+            text-align: center; /* centraliza na horizontal */
+			
+        }
+        ul.menu1 li{
+            display: inline-block; /* centraliza na horizontal */
+            margin: 0 5px;
+        }
+        ul.menu1 li a{
+            background-color: #006400;
+            border-radius: 6px;
+            padding: 6px 10px;
+            color: #fff;
+        }
+        ul.menu1 li a:hover{
+            background-color: #006400;
+        }
+		
+	   #divBusca{
+  			background-color:#006400;
+  			border:solid 2px #5F9EA0;
+  			border-radius:10px;
+  			width:300px;
+  			height:32px;
+		}
+ 
+		#txtBusca{
+  			float:left;
+  			background-color:transparent;
+  			padding-left:5px; 
+ 			font-size:18px;
+  			border:none;
+  			height:32px;
+ 			width:191px;
+			}
+ 
+ 		#btnBusca{
+ 		 	border:none;
+  			float:left;
+  			height:32px;
+  			border-radius:0 7px 7px 0;
+  			width:70px;
+  			font-weight:bold;
+  			background:#5F9EA0;
+		}
+ 
+		#divBusca img{
+  			float:left;
+		}
+		
+		/*MENU 2*/
+		
+		#all2{
+            width: 600px;
+            height: 50px;
+            line-height: 60px; /* centraliza na vertical */
+            background-color: #006400;
+            border: 1px solid #ccc;
+            margin: 0 auto;
+			border-radius: 6px;
+			margin-top: 50px;
+        }
+        ul.menu2{
+            align-items: center; /* centraliza na horizontal */
+			display: flex;
+			justify-content: center;
+			display: -web
+        }
+        ul.menu2 li{
+            display: inline-block; /* centraliza na horizontal */
+            margin: 0 5px;
+        }
+        ul.menu2 li a{
+            background-color: #006400;
+            border-radius: 6px;
+            padding: 6px 10px;
+            color: #fff;
+        }
+        ul.menu2 li a:hover{
+            background-color: #8BBADC;
+        }
+		
+		#titulo{
+		color: #006400;
+		font-size: 25px;
+		margin-top: 40px;
+		}
+
+		#entrar{
+		color: #006400;
+		font-size: px;
+		margin-top:-90px;
+		margin-right: 90px;
+		margin-top:-100px;
+		}
+
+        div#logo{
+        	margin-left: 55px;
+			margin-top:-110px;
+        }
+		
+		#conteudo{
+		margin-top:100px;
+		height: 200px;		
+		}
+		
+		#link_esquerda{
+			color: #006400;
+			width:200px;
+			height: 100px; 
+			margin-left: 200px;
+			text-decoration: none;
+			color: #006400;
+			font-size: 17px;	
+		}
+		
+		#link_direita{	
+			width:200px;
+			margin-left: 1000px;
+			height: 100px; 
+			margin-top: -102px;
+			color: #006400;
+			font-size: 17px;
+		}
+		
+    </style>
+	</head>
+
+	<body>
+
+<div id="banner">
+<div id="titulo"> <center><h1>Memória Institucional IFCE</h1></center>
+<div align="right" id="entrar"><a href="file:///D:/IFCE%202018/PROJETO%20SISTEMAS%20WEB/projeto/telalogin.html" target="_blank"><img src="logoentrarmenor3.jpg"></a></div>
+</div>
+<div align="left" id="logo"><a  href="http://qacademico.ifce.edu.br" target="_blank"><img src="logo if.jpg"></a></div>
+</div>
+</div>
+</br>
+
+<hr style="border-color:#006400">
+<div id="all">
+    <ul class="menu1">
+        <li><a href="menu.html">Apresentação</a></li>
+        <li><a href="#">Politica</a></li>
+        <li><a href="#">Sobre o IFCE</a></li>
+        <li><a href="#">Localização</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+</div>
+<br>
+<center><div id="divBusca">
+	<input type="text" id="txtBusca" placeholder="Buscar..."/>
+	<button id="btnBusca">Buscar</button>
+</div></center>
+
+<div id="conteudo">
+	
+	<div id="link_esquerda">
+	
+		<a href="#">Acervos</a><br><br>
+        <a href="#">Eventos IFCE</a><br><br>
+        <a href="#">Trabalhos Acadêmicos e Técnicos</a>
+	
+	</div>
+	
+	<div id="link_direita">
+	
+		<a href="#">Produção Científica</a><br><br>
+        <a href="#">Teses e Dissertações</a><br><br>
+        <a href="#">Recursos Educacionais</a>
+	
+	</div>
+
+</div>
+
+
+<div id="all2">
+    <ul class="menu2">
+        <li><a href="#">Apresentação</a></li>
+        <li><a href="#">Politica</a></li>
+        <li><a href="#">Sobre o IFCE</a></li>
+        <li><a href="#">Localização</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+</div>
+<hr style="border-color:#006400">
+<br>
+</body>
+</html>
