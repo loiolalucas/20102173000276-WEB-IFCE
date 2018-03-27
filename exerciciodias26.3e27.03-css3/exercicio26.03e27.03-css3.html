@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+        <title>
+        </title>
+    
+<style>   	
+    input{
+	width:300px;
+	height:100px;
+	border-radius: 50px;
+	background: linear-gradient(#006400, #7FFF00); 
+	text-align: center;
+    }
+
+    #box{
+    width:300px;
+	height:100px;
+    box-shadow: 1px 2px 4px #006400;
+    transform: rotate(-10deg);
+    transition: width 2s;
+    animation-name:anime; 
+    animation-duration: 4s;
+  
+    }
+    @keyframes anime{
+	from {background-color: red;}
+ 	to {background-color: yellow;}
+
+
+
+</style>
+</head>
+<body>
+<input type="button" name="butao1"><br> 
+<input type="button" name="butao2"><br><br><br>
+<div id="box"></div> 
+</body>
+</html>
