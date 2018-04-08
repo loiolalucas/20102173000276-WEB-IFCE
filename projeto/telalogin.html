@@ -7,12 +7,30 @@
 <link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet'>
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel='stylesheet'>
 		<style>
-body{font-family: 'Ropa Sans', sans-serif; color:#666; font-size:14px; color:#333}
-li,ul,body,input{margin:0; padding:0; list-style:none}
-#login-form{width:350px; background:#FFF; margin:0 auto; margin-top:70px; background:#f8f8f8; overflow:hidden; border-radius:7px}
-.form-header{display:table; clear:both}
-.form-header label{display:block; cursor:pointer; z-index:999}
-.form-header li{margin:0; line-height:60px; width:175px; text-align:center; background:#eee; font-size:18px; float:left; transition:all 600ms ease}
+/*______________________________________________________CSS3____________________________________________________________________________________________*/
+	  div#logo{
+        	margin-left: 55px;
+			margin-top:90px;
+			margin-right: 60px;
+        }
+	body{
+	font-family: 'Ropa Sans', sans-serif; color:#666; font-size:14px; color:#333
+	}
+	li,ul,body,input{
+	margin:0; padding:0; list-style:none
+	}
+	#login-form{
+	width:350px; background:#FFF; margin:0 auto; margin-top:20px; background:#f8f8f8; overflow:hidden; border-radius:7px
+	}
+	.form-header{
+	display:table; clear:both
+	}
+	.form-header label{
+	display:block; cursor:pointer; z-index:999
+	}
+	.form-header li{
+		margin:0; line-height:60px; width:175px; text-align:center; background:#eee; font-size:18px; float:left; transition:all 600ms ease
+	}
 
 /*sectiop*/
 .section-out{width:700px; float:left; transition:all 600ms ease}
@@ -50,14 +68,25 @@ li,ul,body,input{margin:0; padding:0; list-style:none}
 
  body{
   background: url("plano de fundo.jpg") center center no-repeat fixed; 
+ }
+ @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+
+ body{
+  
+   height: 100px;
+
+ }
 }
-		</style>
+</style>
+<!-- _______________________________________________________________________FIM DO CSS3______________________________________________________________-->
 </head>
 
 <body>
+<!-- __________________________________________________________________________HTML _________________________________________________________________-->
 <br>
 <br>
-<div align="center"><img src="projeto web6.jpg"></div>
+<div align="center" id="logo"><img src="projeto web7.jpg"></div>
 <div id="login-form">
 
 <input type="radio" checked id="login" name="switch" class="hide">
@@ -97,6 +126,7 @@ li,ul,body,input{margin:0; padding:0; list-style:none}
 <ul class="ul-list">
 <li><input type="email" required class="input" placeholder="Seu Email"/><span class="icon"><i class="fa fa-user"></i></span></li>
 <li><input type="password" required class="input" placeholder="Senha"/><span class="icon"><i class="fa fa-lock"></i></span></li>
+<li><input type="confirm password" required class="input" placeholder="Confirmar Senha"/><span class="icon"><i class="fa fa-lock"></i></span></li>
 <li><input type="checkbox" id="check1"> <label for="check1">Eu aceito os termos e condições</label></li>
 <li><input type="submit" value="INSCREVA-SE" class="btn"></li>
 </ul>

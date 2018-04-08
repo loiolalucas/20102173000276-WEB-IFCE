@@ -1,26 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-    
-    <style>
-        *{ margin: 0;padding: 0; }
-        body{ font-family: "trebuchet ms"; }
-        a{ text-decoration: none; color: #000; }
+<meta charset="utf-8">
+    <title>
+    </title>
+<style>
+/*__________________________________________________CSS3_______________________________________________________________________*/
+        *{ 
+        	margin: 0;
+        	padding: 0; 
+        }
+        body{ 
+        	font-family: "trebuchet ms"; 
+        }
+        a{ 
+        	text-decoration: none; 
+        	color: #000; 
+        }
         a:hover{ }
- 
-        #all{
+
+		/*BANNER*/
+		#titulo{
+		color: #006400;
+		font-size: 25px;
+		margin-top: 10px;
+		text-shadow: 0.1em 0.1em #333;
+		}
+		#entrar{
+		color: #006400;
+		font-size: px;
+		margin-top:-90px;
+		margin-right: 90px;
+		margin-top:-100px;
+		}
+        div#logo{
+        	margin-left: 55px;
+			margin-top:-110px;
+        }
+        /*MUDAR O IDIOMA DO SITE*/
+		#idioma{
+
+		}
+           /*MENU 1*/
+        #menucima{
             width: 600px;
-            height: 50px;
-            line-height: 60px; /* centraliza na vertical */
+            height: 36px;
+            line-height: 40px; /* centraliza na vertical */
             background-color: #006400;
-            border: 1px solid #ccc;
+            border: 3px solid #5F9EA0;
             margin: 0 auto;
 			border-radius: 6px;
         }
         ul.menu1{
             text-align: center; /* centraliza na horizontal */
-			
         }
         ul.menu1 li{
             display: inline-block; /* centraliza na horizontal */
@@ -33,17 +65,18 @@
             color: #fff;
         }
         ul.menu1 li a:hover{
-            background-color: #006400;
+            background-color: #5F9EA0;
+            text-decoration: underline;
         }
-		
+       		/*CAIXA DE PESQUISA*/
 	   #divBusca{
   			background-color:#006400;
   			border:solid 2px #5F9EA0;
   			border-radius:10px;
   			width:300px;
   			height:32px;
+  			background: white;
 		}
- 
 		#txtBusca{
   			float:left;
   			background-color:transparent;
@@ -52,8 +85,8 @@
   			border:none;
   			height:32px;
  			width:191px;
+ 			background: white;
 			}
- 
  		#btnBusca{
  		 	border:none;
   			float:left;
@@ -63,19 +96,55 @@
   			font-weight:bold;
   			background:#5F9EA0;
 		}
- 
+		#btnBusca:hover{
+            background-color: white;
+        }
 		#divBusca img{
+			opacity: 0.299;
   			float:left;
+  		}
+  		#pesquisaavancada{
+  			width:200px;
+			height: 00px; 
+			margin-left: 180px;
+  		}
+
+  		#assunto{
+  			margin-top: 06px;
+  		}
+  			/*CONTEUDO*/
+		#conteudo{
+		margin-top:100px;
+		height: 200px;		
+		}
+		#link_esquerda{
+			color: #006400;
+			width:200px;
+			height: 100px; 
+			margin-left: 200px;
+			color: #006400;
+			font-size: 17px;	
+		}
+		#link_esquerda:hover{
+            background-color: #5F9EA0;
+            text-decoration: underline;
+        }
+		#link_direita{	
+			width:200px;
+			margin-left: 1000px;
+			height: 100px; 
+			margin-top: -102px;
+			color: #006400;
+			font-size: 17px;
 		}
 		
 		/*MENU 2*/
-		
-		#all2{
+		#menubaixo{
             width: 600px;
-            height: 50px;
-            line-height: 60px; /* centraliza na vertical */
+            height: 36px;
+            line-height: 40px; /* centraliza na vertical */
             background-color: #006400;
-            border: 1px solid #ccc;
+            border: 3px solid #5F9EA0;
             margin: 0 auto;
 			border-radius: 6px;
 			margin-top: 50px;
@@ -97,113 +166,188 @@
             color: #fff;
         }
         ul.menu2 li a:hover{
-            background-color: #8BBADC;
+            background-color: #5F9EA0;
+            text-decoration: underline;
         }
-		
-		#titulo{
-		color: #006400;
-		font-size: 25px;
-		margin-top: 40px;
-		}
+		/*PLANO DE FUNDO DO SITE*/
+		body{
+			background: url("terceiro plano de fundo.jpg") center no-repeat fixed; 
+ }
+/*_______________________________________________________Responsivo_______________________________________________________________________*/
+		/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
 
-		#entrar{
-		color: #006400;
-		font-size: px;
-		margin-top:-90px;
-		margin-right: 90px;
-		margin-top:-100px;
-		}
+}
 
-        div#logo{
-        	margin-left: 55px;
-			margin-top:-110px;
-        }
-		
-		#conteudo{
-		margin-top:100px;
-		height: 200px;		
-		}
-		
-		#link_esquerda{
-			color: #006400;
-			width:200px;
-			height: 100px; 
-			margin-left: 200px;
-			text-decoration: none;
-			color: #006400;
-			font-size: 17px;	
-		}
-		
-		#link_direita{	
-			width:200px;
-			margin-left: 1000px;
-			height: 100px; 
-			margin-top: -102px;
-			color: #006400;
-			font-size: 17px;
-		}
-		
-    </style>
-	</head>
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
 
-	<body>
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
 
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+
+					
+	</style>
+<!-- ___________________________________________________FIM DO CSS3_____________________________________________________________________ -->
+</head>
+<!-- ______________________________________________________HTML_________________________________________________________________________-->
+<body>
 <div id="banner">
-<div id="titulo"> <center><h1>Memória Institucional IFCE</h1></center>
-<div align="right" id="entrar"><a href="file:///D:/IFCE%202018/PROJETO%20SISTEMAS%20WEB/projeto/telalogin.html" target="_blank"><img src="logoentrarmenor3.jpg"></a></div>
-</div>
-<div align="left" id="logo"><a  href="http://qacademico.ifce.edu.br" target="_blank"><img src="logo if.jpg"></a></div>
-</div>
-</div>
-</br>
+			 <div align="center" id="titulo"><h2>Memória Institucional<br>IFCE CAMPUS TAUÁ</h2>
+		     <div align="right" id="entrar"><a href="file:///F:/IFCE%202018/PROJETO%20SISTEMAS%20WEB/projeto/telalogin.html" target="_blank"><img src="logoentrarmenor3.jpg"></a></div></div>
 
-<hr style="border-color:#006400">
-<div id="all">
-    <ul class="menu1">
-        <li><a href="menu.html">Apresentação</a></li>
-        <li><a href="#">Politica</a></li>
-        <li><a href="#">Sobre o IFCE</a></li>
-        <li><a href="#">Localização</a></li>
-        <li><a href="#">Contato</a></li>
-    </ul>
+			 <div align="left" id="idioma"><a  href="http://translate.google.com.br/translate?u=http:file:///D:/IFCE%202018/PROJETO%20SISTEMAS%20WEB/projeto/paginainicialdoprojeto.html&sl=pt&tl=es&ie=UTF-8">        </a></div>
+
+			 <div align="left" id="logo"><a  href="http://qacademico.ifce.edu.br" target="_blank"><img src="logo if.jpg"></a></div>
+</br>
+<hr style="border:solid 2px #5F9EA0">
+<div id="menucima">
+   		<ul class="menu1">
+       		 <li><a href="menu.html">Apresentação</a> <font color="white">|</font></li>
+        	 <li><a href="#">Politica</a><font color="white">|</font></li>
+        	 <li><a href="#">Sobre o IFCE</a><font color="white">|</font></li>
+        	 <li><a href="#">Localização</a><font color="white">|</font></li>
+        	 <li><a href="#">Contato</a></li>
+    	</ul>
 </div>
 <br>
 <center><div id="divBusca">
-	<input type="text" id="txtBusca" placeholder="Buscar..."/>
-	<button id="btnBusca">Buscar</button>
-</div></center>
+			<img src="busca.jpg">
+			<input type="text" id="txtBusca" placeholder="Buscar..."/>
+			<button id="btnBusca">Buscar</button>
+			<div id="pesquisaavancada">
+			<a href="https://www.google.com.br/?gws_rd=cr&dcr=0&ei=M27GWsOSJYGHwgT-5LfYCw" target="_blank"><img src="pesquisa avancada.jpg"></a></div>
+</div>
+</center>
 
+
+<div id="assunto" style="text-align: center;"><h5>Percorrer lista: Autor Título Assunto</h5></div>
 <div id="conteudo">
-	
-	<div id="link_esquerda">
-	
-		<a href="#">Acervos</a><br><br>
-        <a href="#">Eventos IFCE</a><br><br>
-        <a href="#">Trabalhos Acadêmicos e Técnicos</a>
-	
-	</div>
-	
-	<div id="link_direita">
-	
-		<a href="#">Produção Científica</a><br><br>
-        <a href="#">Teses e Dissertações</a><br><br>
-        <a href="#">Recursos Educacionais</a>
-	
-	</div>
-
+<div id="link_esquerda">
+			<a href="#">Acervos</a><br><br>
+        	<a href="#">Eventos IFCE</a><br><br>
+        	<a href="#">Trabalhos Acadêmicos e Técnicos</a>
+</div>
+</div>
+<div id="link_direita">
+			<a href="#">Produção Científica</a><br><br>
+        	<a href="#">Teses e Dissertações</a><br><br>
+        	<a href="#">Recursos Educacionais</a>
 </div>
 
-
-<div id="all2">
-    <ul class="menu2">
-        <li><a href="#">Apresentação</a></li>
-        <li><a href="#">Politica</a></li>
-        <li><a href="#">Sobre o IFCE</a></li>
-        <li><a href="#">Localização</a></li>
-        <li><a href="#">Contato</a></li>
-    </ul>
+<div id="menubaixo">
+    	<ul class="menu2">
+        	<li><a href="#">Apresentação</a><font color="white">|</font></li>
+        	<li><a href="#">Politica</a><font color="white">|</font></li>
+        	<li><a href="#">Sobre o IFCE</a><font color="white">|</font></li>
+        	<li><a href="#">Localização</a><font color="white">|</font></li>
+        	<li><a href="#">Contato</a></li>
+</ul>
 </div>
-<hr style="border-color:#006400">
-<br>
+<hr style="border:solid 2px #5F9EA0">
+<p><div style="text-align: left;"><h5 style="background-color:white;">O Autor é titular dos direitos autorais deste repositório.</h5></div></p>
 </body>
 </html>
