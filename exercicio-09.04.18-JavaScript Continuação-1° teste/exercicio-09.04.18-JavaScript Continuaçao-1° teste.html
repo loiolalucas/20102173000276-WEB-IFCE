@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>TESTE 1</title>
+<!--_____________________________________________________________JAVASCRIPT____________________________________________________________-->
+<script>
+	function displayCor(argument) {
+		// body...
+		console.log("Passou no primeiro teste");
+		var valorCampo1 = document.getElementById("idCampo1").value; 
+		console.log(valorCampo1);
+		var valorCampo2 = document.getElementById("idCampo2").value;
+		console.log(valorCampo2);
+
+		if(valorCampo1){
+			document.getElementById("idCampo1").style.color="blue"; 
+			document.getElementById("idCampo1").style.backgroundColor="white";
+		}else{
+			document.getElementById("idCampo1").style.backgroundColor="red";
+		}
+		if(valorCampo2){
+			document.getElementById("idCampo2").style.color="blue"; 
+			document.getElementById("idCampo2").style.backgroundColor="white";
+		}else{
+			document.getElementById("idCampo2").style.backgroundColor="red";
+	}
+	if(valorCampo1 && valorCampo2){
+		document.getElementById("paragrafoParaLog").innerHTML="DEU CERTO :)"; 
+	}else{
+		document.getElementById("paragrafoParaLog").innerHTML="NÃO DEU CERTO :("; 
+	}
+}
+</script>
+</head>
+<!--_____________________________________________________________HTML____________________________________________________________-->
+<body>
+<form>
+		<p id="paragrafoParaLog"></p>
+	NOME:<br>
+ 		<input type="text" name="campo1" id="idCampo1">
+ 		<br>
+ 		<br>
+ 	EMAIL:<br>
+ 		<input type="text" name="campo2" id="idCampo2">
+ 		<br>
+ 		<br>
+ 		<button type="button" value="testar" onclick="displayCor()"> testar </button>
+</form>
+</body>
+</html>
