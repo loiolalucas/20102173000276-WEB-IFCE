@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    </title>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript">
+  	// funcao para esconder texto
+  	$(document).ready(function(){//Para prevenir que algum código seja executado antes da página ser renderizada
+ 	$("a").ready(function(event){
+  	$("#cookies").hide("slow"); 
+ 	});
+	})
+  	//funcao para mudar a cor
+	$(document).ready(function(){ //Para prevenir que algum código seja executado antes da página ser renderizada
+	$("#cor").click(function(){
+	$("#cor").css("background","red");	
+	});
+	})
+    //funcao passar o mouse sobre o texto
+	$(function(){
+		$("#mudanome").hover(
+			//Ao posicionar o cursor sobre a div
+			function(){
+			jQuery("#mudanome").html("desapego-taua");
+			},
+			//Ao remover o cursor da div
+			function(){
+				jQuery("#mudanome").html("desapego.com");
+			}
+		);
+	});
+	//Chamada GET via AJAX para a URL mostrado no console e na tela o resultado da chamada
+	$.ajax({
+           type: 'GET',
+ 			url: 'http://jsonplaceholder.typcode.com/posts/1',
+ 			success: function(data) {
+ 				console.log("I have friends!", data); //returns all of johnbob's friends
+ }
+});
+
+
+</script>
+
+</head>
+<body>
+<h2><center>LISTA DE EXERCICIO 13</center></h2>
+<h3><center>JQUERY E AJAX</center></h3>
+<p>1 - Ao carregar a página, faça com que todos os
+elementos com id cookies desapareçam.</p>
+<p>2 - Faça com que ao clicar no parágrafo
+correspondente mude para o background
+vermelho.</p>
+<p>3 - Faça com que ao clicar no parágrafo
+correspondente alterne entre verde e amarelo.
+Isto é, se clicar no parágrafo e a cor do
+background for branco ou verde, mude para
+amarelo. Se for amarelo, mude para verde.</p>
+<p>4 - Ao passar o mouse sobre o texto
+desapego.com​, mude para
+desapego-taua.com. ​Ao retirar o cursor do texto,
+mude novamente para desapego.com.</p>
+<p>5- (AJAX) ​Ao clicar no botão do arquivo, faça uma
+chamada GET via AJAX para a seguinte URL:
+https://jsonplaceholder.typicode.com/posts/1.
+Mostre no console e na tela o resultado da
+chamada.</p>
+<p>6 - (AJAX​) Ao clicar no botão correspondente a
+chamada AJAX POST, faça uma chamada POST
+a URL:<br>
+https://jsonplaceholder.typicode.com/posts
+passando na mensagem os seguintes dados { id:
+101, title: 'foo', body: 'bar', userId: 1 }, conforme o
+exemplo abaixo. Em caso de sucesso, mostre no
+console o resultado da execução. Em caso de
+erro, mostre em um alerta a mensagem de erro.</p>
+
+..............................................................................................................................
+
+    <p>Olá bem vino ao meu site</p>
+	<span id="mudanome">desapego.com.</span></p>
+	<p id="cookies"> +++ Site com cookies configurados+++</p>
+	<p id="cor">click aqui para mudar para cor vermelha</p>
+	<p>click aqui para alterar entre cor verde e amarelo</p>
+	<button id="hide">Clique me AJAX GET</button>
+	<button>Clique me AJAX POST</button>
+
+</body>
+</html>
